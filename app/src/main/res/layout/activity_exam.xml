@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/question_id"
+                    android:textSize="18sp"
+                    android:text="1"
+                    android:textColor="@color/color_green"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/question"
+                    android:textSize="18sp"
+                    android:text="Question Desciption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        <RadioGroup
+            android:layout_marginTop="20dp"
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:text="AnswerA"
+                android:id="@+id/answera"
+                android:textSize="16sp"
+                android:textColor="@color/colortext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="AnswerB"
+                android:id="@+id/answerb"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colortext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="AnswerC"
+                android:id="@+id/answerc"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colortext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="AnswerD"
+                android:id="@+id/answerd"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colortext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+        <TextView
+                android:layout_marginTop="30dp"
+                android:visibility="invisible"
+                android:id="@+id/explaination"
+                android:textSize="14sp"
+            android:layout_marginRight="10dp"
+                android:textColor="@color/color_red2"
+                android:text="Question Explaination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_weight="8"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btn_previous"
+            android:text="上一题"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/btn_style_two"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/btn_next"
+            android:text="下一题"
+            android:layout_marginLeft="3dp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/btn_style_two"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+</LinearLayout>
